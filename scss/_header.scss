@@ -1,0 +1,55 @@
+@import "variables";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.logo {
+  font-family: $font-logo;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: blue;
+  width: auto;
+}
+
+.mint {
+  font-size: 28px;
+}
+
+.telefon {
+  color: $color;
+  font-family: $font-telefon;
+  font-size: $fontsize-telefon;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.telefon a {
+  text-decoration: none;
+  color: $color;
+}
+
+.contact {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workdays, .worktime {
+  font-family: $font-work;
+  font-size: $fontsize-work;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
