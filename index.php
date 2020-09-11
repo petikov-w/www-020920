@@ -13,9 +13,13 @@
 </head>
 <body>
 <?php
+   $close_time='';
+   $open_time='';
+   $telefon='';
+   $day_np = '';
+   $day_kp = '';
    include('variables.php');
    include ('functions.php');
-
 ?>
 
 <header>
@@ -25,12 +29,10 @@
             <button class="btn">Заказать звонок</button>
             <div class="info">
                 <div class="telefon">
-<!--                    <a href="tel:89054289044">8 905 428-90-44</a>-->
-<!--                    <a href="tel:89054289044">--><?php //echo "{$telefon}"; ?><!--</a>-->
-                    <a href="tel:89054289044"><?php echo formatTelefonNumber($telefon); ?></a>
+                    <a href="tel:<?php echo $telefon ?>"><?php echo formatTelefonNumber($telefon); ?></a>
                 </div>
-                <div class="workdays">понедельник - пятница</div>
-                <span class="worktime">с <?php echo $open_time; ?> до <?php echo "{$close_time}"; ?></span>
+                <div class="workdays"><?php echo $day_np;?> - <?php echo $day_kp;?></div>
+                <span class="worktime">с <?php echo $open_time; ?> до <?php echo $close_time; ?></span>
             </div>
         </div>
     </div>
