@@ -13,13 +13,9 @@
 </head>
 <body>
 <?php
-   $close_time='';
-   $open_time='';
-   $telefon='';
-   $day_np = '';
-   $day_kp = '';
-   include('variables.php');
-   include ('functions.php');
+   use ru\www_020920\Variables;
+   require_once 'variables.php';
+   require_once 'functions.php';
 ?>
 
 <header>
@@ -29,10 +25,10 @@
             <button class="btn">Заказать звонок</button>
             <div class="info">
                 <div class="telefon">
-                    <a href="tel:<?php echo $telefon ?>"><?php echo formatTelefonNumber($telefon); ?></a>
+                    <a href="tel:<?php echo variables::$telefon ?>"><?php echo formatTelefonNumber(variables::$telefon); ?></a>
                 </div>
-                <div class="workdays"><?php echo $day_np;?> - <?php echo $day_kp;?></div>
-                <span class="worktime">с <?php echo $open_time; ?> до <?php echo $close_time; ?></span>
+                <div class="workdays"><?php echo variables::$day_np;?> - <?php echo variables::$day_kp;?></div>
+                <span class="worktime">с <?php echo variables::$open_time; ?> до <?php echo variables::$close_time; ?></span>
             </div>
         </div>
     </div>
@@ -53,6 +49,19 @@
         </ul>
     </div>
 </navigation>
+
+<div class="overlay">
+    <div class="content-wrapper">
+        <h1 class="title">Позвоните<br>мне</h1>
+        <form action="" class="form-wrapper">
+            <label for="" class="form-label">Ваше имя</label>
+            <input type="text" class="form-input" placeholder="Введите имя">
+            <label for="" class="form-label">Ваш телефон</label>
+            <input type="text" class="form-input" placeholder="Введите телефон">
+            <input class="form-submit" type="submit" value="Отправить">
+        </form>
+    </div>
+</div>
 
 
 </body>

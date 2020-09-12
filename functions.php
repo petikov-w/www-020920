@@ -3,6 +3,7 @@
 // функция форматирования телефонного номера
 
 function formatTelefonNumber($telefon) {
+    $pref = '';
     $temp = $telefon;
     if ($temp[0]=='8') { $pref=substr($temp,0,1);}
     elseif($temp[0]=='+') {$pref=substr($temp,0,2);}
