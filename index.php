@@ -52,12 +52,12 @@
 
 <div class="overlay">
     <div class="content-wrapper">
-        <h1 class="title">Позвоните<br>мне</h1>
+        <h1 class="title">Заказ звонка</h1>
         <form action="" class="form-wrapper">
-            <label for="" class="form-label">Ваше имя</label>
-            <input type="text" class="form-input" placeholder="Введите имя">
-            <label for="" class="form-label">Ваш телефон</label>
-            <input type="text" class="form-input" placeholder="Введите телефон">
+            <label for="name" class="form-label">Ваше имя</label>
+            <input id="name" type="text" class="form-input" placeholder="Введите имя" required>
+            <label for="telefon" class="form-label">Ваш телефон</label>
+            <input id="telefon" type="text" class="form-input" placeholder="Введите телефон" required>
             <input class="form-submit" type="submit" value="Отправить">
         </form>
     </div>

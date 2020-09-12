@@ -132,18 +132,21 @@ li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .content-wrapper {
-  width: 500px;
+  max-width: 500px;
 }
 
 .title {
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: 46px;
-  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .form-wrapper {
@@ -174,6 +177,12 @@ li a:hover {
   width: 100%;
   margin-bottom: 15px;
   padding: 0 20px;
+  transition: background-color 0.2s ease-in;
+}
+
+.form-input:focus {
+  outline: none;
+  background-color: #c6e8e8;
 }
 
 .form-submit {
