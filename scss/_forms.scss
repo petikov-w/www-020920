@@ -1,5 +1,6 @@
 .overlay {
-  display: flex;
+  //display: flex;
+  display: none;
   position: absolute;
   background-color: rgba(23,55,56,0.35);
   width: 100%;
@@ -76,3 +77,36 @@
   margin-top: 15px;
   cursor: pointer;
 }
+
+@media (max-width: 400px) {
+  .form-input {
+    font-size: 16px;
+  }
+}
+
+.close-btn {
+  width: 31px;
+  height: 31px;
+  display: block;
+  cursor: pointer;/* для случая применения отличных от <a> тегов */
+  background: url(/images/close.png);
+  text-indent: -4999px;
+  border: none;
+  outline: none;
+}
+/* кнопка закрытия при наведении */
+.close-btn:hover {
+  background: url(/images/close-hover.png);
+}
+//.box {
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  width: 100px;
+//  height: 100px;
+//  background-color: #2b48ce;
+//  font-size: 32px;
+//  font-weight: 600;
+//  color: white;
+//  margin-top: 30px;
+//}

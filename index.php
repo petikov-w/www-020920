@@ -22,7 +22,7 @@
     <div class="header">
         <div class="logo">Петиков <span class="mint">и</span>  К°</div>
         <div class="contact">
-            <button class="btn">Заказать звонок</button>
+            <button class="btn"  onclick="s1()">Заказать звонок</button>
             <div class="info">
                 <div class="telefon">
                     <a href="tel:<?php echo variables::$telefon ?>"><?php echo formatTelefonNumber(variables::$telefon); ?></a>
@@ -50,10 +50,17 @@
     </div>
 </navigation>
 
-<div class="overlay">
+
+
+
+
+<div class="overlay" id="overlay">
     <div class="content-wrapper">
+
+        <button class="close-btn"  onclick="s2()"></button>
+
         <h1 class="title">Заказ звонка</h1>
-        <form action="" class="form-wrapper">
+        <form action="" class="form-wrapper" autocomplete="off">
             <label for="name" class="form-label">Ваше имя</label>
             <input id="name" type="text" class="form-input" placeholder="Введите имя" required>
             <label for="telefon" class="form-label">Ваш телефон</label>
@@ -63,6 +70,8 @@
     </div>
 </div>
 
+<!--<div class="box" id="box">2</div>-->
 
+<script src="js/clickButtonA.js"></script>
 </body>
 </html>
