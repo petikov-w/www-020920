@@ -13,3 +13,13 @@ function s2()
         document.getElementById('overlay').style.display='none';
     }
 }
+
+function empty_form () {
+    var txt = document.getElementById('name').value;
+    if(txt === '') {
+        alert('Вы забыли ввести текст.');
+        document.getElementById('error1').style.display='block';
+        return false;
+    }
+    return true;
+}

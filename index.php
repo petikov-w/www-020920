@@ -51,26 +51,32 @@
 </navigation>
 
 
-
-
-
 <div class="overlay" id="overlay">
     <div class="content-wrapper">
 
         <button class="close-btn"  onclick="s2()"></button>
-
         <h1 class="title">Заказ звонка</h1>
-        <form action="" class="form-wrapper" autocomplete="off">
+        <form method="post" action="index.php" class="form-wrapper" onsubmit="return empty_form()" autocomplete="off">
             <label for="name" class="form-label">Ваше имя</label>
-            <input id="name" type="text" class="form-input" placeholder="Введите имя" required>
+            <div class="error1" id="error1">Вы не ввели имя</div>
+<!--            --><?php
+//                if(isset($_POST['name']) && trim($_POST['name'])=='') {
+//                    echo '<div class="error">Вы не ввели имя</div>';
+//                }
+//            ?>
+
+            <input name="name" id="name" type="text" class="form-input" placeholder="Введите имя">
             <label for="telefon" class="form-label">Ваш телефон</label>
-            <input id="telefon" type="text" class="form-input" placeholder="Введите телефон" required>
-            <input class="form-submit" type="submit" value="Отправить">
+<!--            <div class="error">Вы не ввели номер телефона</div>-->
+            <input name="telefon" id="telefon" type="text" class="form-input" placeholder="Введите телефон">
+<!--            <input class="form-submit" type="submit" value="Отправить">-->
+<!--            <input class="form-submit" type="submit" value="Отправить">-->
+            <button class="form-submit" id="submit" type="submit" >Отправить</button>
         </form>
     </div>
 </div>
 
-<!--<div class="box" id="box">2</div>-->
+<?php printss($_POST); ?>
 
 <script src="js/clickButtonA.js"></script>
 </body>

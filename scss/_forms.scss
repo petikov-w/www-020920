@@ -29,8 +29,8 @@
 
 .form-wrapper {
   display: flex;
+  position: relative;
   flex-direction: column;
-  //justify-content: center;
   align-items: flex-start;
   background-color: #fff;
   border-radius: 14px;
@@ -76,6 +76,17 @@
   width: 100%;
   margin-top: 15px;
   cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+
+.form-submit:hover, .form-submit:focus {
+  background-color: #00cca3;
+  outline: none;
+}
+
+.form-submit:active {
+  background-color: #088169;
+  outline: none;
 }
 
 @media (max-width: 400px) {
@@ -87,26 +98,33 @@
 .close-btn {
   width: 31px;
   height: 31px;
-  display: block;
   cursor: pointer;/* для случая применения отличных от <a> тегов */
   background: url(/images/close.png);
-  text-indent: -4999px;
+  //text-indent: -4999px;
   border: none;
   outline: none;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: -10px;
+  z-index: 9;
 }
 /* кнопка закрытия при наведении */
 .close-btn:hover {
   background: url(/images/close-hover.png);
 }
-//.box {
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//  width: 100px;
-//  height: 100px;
-//  background-color: #2b48ce;
-//  font-size: 32px;
-//  font-weight: 600;
-//  color: white;
-//  margin-top: 30px;
-//}
+
+.error1 {
+  display: none;
+  background-color: rgba(255,25,30,0.7);
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#error1 {
+  display: none;
+}
