@@ -13,4 +13,10 @@ class Variables {
     static public $telefon_info = array(
         'main' => '89094282463'
     );
+
+    static public $email_info = array(
+        'main' => 'krox2005@yandex.ru',
+        'slave' => 'vx7xv@inbox.ru'
+    );
+
 }

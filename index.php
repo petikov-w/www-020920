@@ -71,13 +71,14 @@
             <div class="error" id="error2">Вы не ввели номер телефона</div>
             <input name="telefon" id="telefon" type="text" class="form-input"
                    onblur ="empty_field('telefon','error2')" placeholder="Введите телефон">
-            <input class="form-submit" type="submit" value="Отправить">
+            <input class="form-submit" type="submit" onsubmit="<?php sendEmail(); ?>" value="Отправить">
         </form>
     </div>
 </div>
 <!--=======================================================================================-->
 
-<?php printss($_POST); ?>
+<?php //printss($_POST);
+//printss($_SESSION);?>
 
 <script src="js/callback_form.js"></script>
 </body>
