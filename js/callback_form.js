@@ -9,6 +9,16 @@ function visible_form(form_id){
     }
 }
 
+function visible_form_2(form_id, _switch) {
+    if (_switch) {$(form_id).show}
+    else {$(form_id).hide()}
+}
+
+function visible_form_3(_switch) {
+    if (_switch) {$('.header .logo').show}
+    else {$('.header .logo').hide()}
+}
+
 function empty_form() {
      let flag = true;
      let field_1 = document.getElementById('name').value;

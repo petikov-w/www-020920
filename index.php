@@ -22,7 +22,7 @@
     <div class="header">
         <div class="logo">Петиков <span class="mint">и</span>  К°</div>
         <div class="contact">
-            <button class="btn"  onclick="visible_form('overlay')">Заказать звонок</button>
+            <button class="btn-call">Заказать звонок</button>
             <div class="info">
                 <div class="telefon">
                     <a href="tel:<?php echo variables::$telefon_info['main'] ?>"><?php echo formatTelefonNumber(variables::$telefon_info['main']); ?></a>
@@ -58,7 +58,7 @@
 <!--=========================== ФОРМА ОБРАТНОГО ЗВОНКА====================================-->
 <div class="overlay" id="overlay">
     <div class="content-wrapper">
-        <button class="close-btn"  onclick="visible_form('overlay')"></button>
+        <button class="close-btn"  onclick="visible_form_3(false)"></button>
         <h1 class="title">Заказ звонка</h1>
         <form method="post" action="index.php" class="form-wrapper"
                             onsubmit="return empty_form()"
@@ -79,7 +79,8 @@
 
 <?php //printss($_POST);
 //printss($_SESSION);?>
-
+<script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/callback_form.js"></script>
+
 </body>
 </html>

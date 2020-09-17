@@ -17,6 +17,10 @@ body {
   align-items: center;
 }
 
+.hide {
+  display: none;
+}
+
 .logo {
   font-family: "Lobster", cursive;
   font-size: 40px;
