@@ -81,6 +81,7 @@
 //printss($_SESSION);?>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/callback_form.js"></script>
+<script src="js/callback_forms.js"></script>
 
 </body>
 </html>

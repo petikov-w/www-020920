@@ -1,4 +1,4 @@
-(function ($) {
+(function () {
 
    //var btn_call = $('.btn-call');
   //   btn_call.on('click', function(e)
@@ -6,7 +6,7 @@
   //       e.preventDefault();
   //       $('.logo').hide();
   //   });
-    $('.btn-call').click(  function(e) {
+    $('.btn-call').click(function(e) {
         e.preventDefault();
         $('.logo').addClass('hide');
 });

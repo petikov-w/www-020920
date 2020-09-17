@@ -8,11 +8,6 @@
   align-items: center;
 }
 
-.hide {
-  display: none;
-}
-
-
 .logo {
   font-family: $font-logo;
   font-size: 40px;
@@ -57,4 +52,8 @@
   font-size: $fontsize-work;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.hide {
+  display: none;
 }
