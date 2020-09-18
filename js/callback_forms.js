@@ -1,24 +1,37 @@
-(function () {
+$( document ).ready(function() {
 
-   //var btn_call = $('.btn-call');
-  //   btn_call.on('click', function(e)
-  //   {
-  //       e.preventDefault();
-  //       $('.logo').hide();
-  //   });
-    $('.btn-call').click(function(e) {
-        e.preventDefault();
-        $('.logo').addClass('hide');
+    $('.btn-call').click(function() {
+        $('.overlay').addClass('show');
+    })
+
+    $('.close-btn').click(function() {
+        $('.overlay').removeClass('show');
+    })
+
+    $('.form-wrapper').submit(function() {
+
+        let flag = true;
+        if(  $('input#name').val() === '') {
+            $('.err1').addClass('show');
+            flag = false;
+        }
+        if($('input#telefon').val() === '') {
+            $('.err2').addClass('show');
+            flag = false;
+        }
+       return flag;
+    })
+
+    $('input#name').blur(function() {
+       if($('input#name').val().trim().length!==0) {
+           $('.err1').removeClass('show');
+       } else $('.err1').addClass('show');
+    })
+
+    $('input#telefon').blur(function() {
+        if($('input#telefon').val().trim().length!==0) {
+            $('.err2').removeClass('show');
+        } else $('.err2').addClass('show');
+    })
+
 });
-
-});
-// function visible_form_2(form_id, _switch) {
-//     if (_switch) {$(form_id).show}
-//     else {$(form_id).hide()}
-// }
-//
-// function visible_form_3(_switch) {
-//     if (_switch) {$('.header .logo').show}
-//     else {$('.header .logo').hide()}
-// }
-

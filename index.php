@@ -58,20 +58,16 @@
 <!--=========================== ФОРМА ОБРАТНОГО ЗВОНКА====================================-->
 <div class="overlay" id="overlay">
     <div class="content-wrapper">
-        <button class="close-btn"  onclick="visible_form_3(false)"></button>
+        <button class="close-btn"></button>
         <h1 class="title">Заказ звонка</h1>
-        <form method="post" action="index.php" class="form-wrapper"
-                            onsubmit="return empty_form()"
-                            autocomplete="off">
+        <form method="post" action="index.php" class="form-wrapper" autocomplete="off">
             <label for="name" class="form-label">Ваше имя</label>
-            <div class="error" id="error1">Вы не ввели имя</div>
-            <input name="name" id="name" type="text" class="form-input"
-                   onblur ="empty_field('name','error1')" placeholder="Введите имя">
+            <div class="error err1">Вы не ввели имя</div>
+            <input name="name" id="name" type="text" class="form-input" placeholder="Введите имя">
             <label for="telefon" class="form-label">Ваш телефон</label>
-            <div class="error" id="error2">Вы не ввели номер телефона</div>
-            <input name="telefon" id="telefon" type="text" class="form-input"
-                   onblur ="empty_field('telefon','error2')" placeholder="Введите телефон">
-            <input class="form-submit" type="submit" onsubmit="<?php sendEmail(); ?>" value="Отправить">
+            <div class="error err2">Вы не ввели номер телефона</div>
+            <input name="telefon" id="telefon" type="text" class="form-input" placeholder="Введите телефон">
+            <button class="form-submit" type="submit" onsubmit="<?php sendEmail(); ?>">Отправить</button>
         </form>
     </div>
 </div>
@@ -80,7 +76,6 @@
 <?php //printss($_POST);
 //printss($_SESSION);?>
 <script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/callback_form.js"></script>
 <script src="js/callback_forms.js"></script>
 
 </body>

@@ -67,7 +67,7 @@ body {
   display: none;
 }
 
-.btn {
+.btn-call {
   background-color: #4361EE;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -81,15 +81,15 @@ body {
   box-shadow: 1px 1px 0 3px #cbd6ee;
 }
 
-.btn:focus {
+.btn-call:focus {
   outline: none;
 }
 
-.btn:hover {
+.btn-call:hover {
   background-color: #2b48ce;
 }
 
-.btn:active {
+.btn-call:active {
   outline: none;
   box-shadow: 0 0 0 3px #cbd6ee;
 }
@@ -235,27 +235,6 @@ li a:hover {
   background: url(/images/close-hover.png);
 }
 
-.error {
-  display: none;
-  background-color: rgba(255, 25, 30, 0.7);
-  border-radius: 25px;
-  padding: 8px 20px;
-  margin-bottom: 5px;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  width: 100%;
-}
-
-#error1 {
-  display: none;
-}
-
-#error2 {
-  display: none;
-}
-
 @media (max-width: 400px) {
   .form-input {
     font-size: 16px;
@@ -329,6 +308,30 @@ li a:hover {
   #menuToggle {
     display: none;
   }
+}
+.show, .form-wrapper .show {
+  display: flex;
+}
+
+.error {
+  display: none;
+  background-color: rgba(255, 25, 30, 0.7);
+  border-radius: 25px;
+  padding: 8px 20px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+}
+
+.err1 {
+  display: none;
+}
+
+.err2 {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

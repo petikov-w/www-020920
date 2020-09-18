@@ -1,6 +1,6 @@
 @import "variables";
 
-.btn {
+.btn-call {
   background-color: $btn-color;
   color: $white;
   font-family: $font-btn;
@@ -13,15 +13,15 @@
   border-radius: 20px;
   box-shadow: 1px 1px 0 3px #cbd6ee;
 }
-.btn:focus {
+.btn-call:focus {
   outline: none;
 }
 
-.btn:hover {
+.btn-call:hover {
   background-color: $btn-color-hover;
 }
 
-.btn:active {
+.btn-call:active {
   outline: none;
   box-shadow: 0 0 0 3px #cbd6ee;
 }
