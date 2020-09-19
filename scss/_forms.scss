@@ -88,12 +88,11 @@
   outline: none;
 }
 
-.close-btn {
+.btn-close {
   width: 31px;
   height: 31px;
-  cursor: pointer;/* для случая применения отличных от <a> тегов */
+  cursor: pointer;
   background: url(/images/close.png);
-  //text-indent: -4999px;
   border: none;
   outline: none;
   position: absolute;
@@ -102,30 +101,10 @@
   z-index: 9;
 }
 /* кнопка закрытия при наведении */
-.close-btn:hover {
+.btn-close:hover {
   background: url(/images/close-hover.png);
 }
 
-//.error {
-//  display: none;
-//  background-color: rgba(255,25,30,0.7);
-//  border-radius: 25px;
-//  padding: 8px 20px;
-//  margin-bottom: 5px;
-//  color: #fff;
-//  font-family: "Montserrat", sans-serif;
-//  font-weight: 500;
-//  font-size: 14px;
-//  width: 100%;
-//}
-
-//#error1 {
-//  display: none;
-//}
-//
-//#error2 {
-//  display: none;
-//}
 
 @media (max-width: 400px) {
   .form-input {

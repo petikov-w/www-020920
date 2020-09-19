@@ -4,7 +4,7 @@ $( document ).ready(function() {
         $('.overlay').addClass('show');
     })
 
-    $('.close-btn').click(function() {
+    $('.btn-close').click(function() {
         $('.overlay').removeClass('show');
     })
 
@@ -33,5 +33,32 @@ $( document ).ready(function() {
             $('.err2').removeClass('show');
         } else $('.err2').addClass('show');
     })
+
+    // Слайдер
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:15,
+        nav:true,
+        autoplay:true,
+        autoplayTimeout:4000,
+        navText : ['<i class="fas fa-chevron-left fa-2x">','<i class="fas fa-chevron-right fa-2x">'],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+
+    // <i class="fas fa-chevron-left"></i>
+
+
+
 
 });

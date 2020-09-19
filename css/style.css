@@ -7,6 +7,7 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #D6D6D6;
 }
 
 .header {
@@ -61,10 +62,6 @@ body {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
-}
-
-.hide {
-  display: none;
 }
 
 .btn-call {
@@ -216,11 +213,10 @@ li a:hover {
   outline: none;
 }
 
-.close-btn {
+.btn-close {
   width: 31px;
   height: 31px;
   cursor: pointer;
-  /* для случая применения отличных от <a> тегов */
   background: url(/images/close.png);
   border: none;
   outline: none;
@@ -231,7 +227,7 @@ li a:hover {
 }
 
 /* кнопка закрытия при наведении */
-.close-btn:hover {
+.btn-close:hover {
   background: url(/images/close-hover.png);
 }
 
@@ -240,6 +236,35 @@ li a:hover {
     font-size: 16px;
   }
 }
+.main-slider {
+  margin-top: 25px;
+}
+
+.owl-carousel .item {
+  background: #12ab8c;
+  color: #fff;
+}
+
+.cont {
+  position: relative;
+}
+
+.cont h3 {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  top: 30px;
+  right: 20px;
+  z-index: 777;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+  color: #ffff;
+  margin: 0 10px;
+}
+
 @media (max-width: 1200px) {
   .contact {
     margin-right: 20px;

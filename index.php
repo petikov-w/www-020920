@@ -6,6 +6,8 @@
 
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -55,10 +57,34 @@
 <!--======================================================================================-->
 </navigation>
 
+<div class="owl-carousel owl-theme main-slider">
+    <div class="cont">
+        <h3>Первый вариант дизайна</h3>
+        <div class="item pics"><img src="images\img-1.jpg" height="700" alt=""></div>
+    </div>
+    <div class="cont">
+        <h3>Второй вариант дизайна</h3>
+        <div class="item pics"><img src="images\img-2.jpg" height="700" alt=""></div>
+    </div>
+    <div class="cont">
+        <h3>Третий вариант дизайна</h3>
+        <div class="item pics"><img src="images\img-3.jpg" height="700" alt=""></div>
+    </div>
+    <div class="cont">
+        <h3>Четвертый вариант дизайна</h3>
+        <div class="item pics"><img src="images\img-4.jpg" height="700" alt=""></div>
+    </div>
+    <div class="cont">
+        <h3>Пятый вариант дизайна</h3>
+        <div class="item pics"><img src="images\img-5.jpg" height="700" alt=""></div>
+    </div>
+</div>
+
+
 <!--=========================== ФОРМА ОБРАТНОГО ЗВОНКА====================================-->
 <div class="overlay" id="overlay">
     <div class="content-wrapper">
-        <button class="close-btn"></button>
+        <button class="btn-close"></button>
         <h1 class="title">Заказ звонка</h1>
         <form method="post" action="index.php" class="form-wrapper" autocomplete="off">
             <label for="name" class="form-label">Ваше имя</label>
@@ -76,6 +102,9 @@
 <?php //printss($_POST);
 //printss($_SESSION);?>
 <script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="https://kit.fontawesome.com/f9b4d1a641.js" crossorigin="anonymous"></script>
+<!--<script src="https://use.fontawesome.com/0503defa67.js"></script>-->
 <script src="js/callback_forms.js"></script>
 
 </body>

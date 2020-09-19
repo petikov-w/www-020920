@@ -1,0 +1,33 @@
+@import "variables";
+
+.main-slider {
+  margin-top: 25px;
+}
+
+.owl-carousel .item {
+  background: #12ab8c;
+  color:#fff;
+}
+
+.cont {
+  position: relative;
+}
+
+.cont h3 {
+  position: absolute;
+  font-family: $Montserrat;
+  font-size: 28px;
+  font-weight: 500;
+  color:#fff;
+  top: 30px;
+  right: 20px;
+  z-index: 777;
+}
+
+
+.fa-chevron-left, .fa-chevron-right {
+  color: #ffff;
+  margin: 0 10px;
+  //text-shadow: 2px 2px 0 #333; /* Резкая тень под иконкой */
+}
+
