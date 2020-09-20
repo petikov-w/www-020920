@@ -42,6 +42,7 @@ $( document ).ready(function() {
         nav:true,
         autoplay:true,
         autoplayTimeout:4000,
+        dots: false,
         navText : ['<i class="fas fa-chevron-left fa-2x">','<i class="fas fa-chevron-right fa-2x">'],
         responsive:{
             0:{

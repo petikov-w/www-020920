@@ -59,23 +59,23 @@
 
 <div class="owl-carousel owl-theme main-slider">
     <div class="cont">
-        <h3>Первый вариант дизайна</h3>
+        <div class="box"><h3>Первый вариант дизайна</h3></div>
         <div class="item pics"><img src="images\img-1.jpg" height="700" alt=""></div>
     </div>
     <div class="cont">
-        <h3>Второй вариант дизайна</h3>
+        <div class="box"><h3>Второй вариант дизайна</h3></div>
         <div class="item pics"><img src="images\img-2.jpg" height="700" alt=""></div>
     </div>
     <div class="cont">
-        <h3>Третий вариант дизайна</h3>
+        <div class="box"><h3>Третий вариант дизайна</h3></div>
         <div class="item pics"><img src="images\img-3.jpg" height="700" alt=""></div>
     </div>
     <div class="cont">
-        <h3>Четвертый вариант дизайна</h3>
+        <div class="box"><h3>Четвертый вариант дизайна</h3></div>
         <div class="item pics"><img src="images\img-4.jpg" height="700" alt=""></div>
     </div>
     <div class="cont">
-        <h3>Пятый вариант дизайна</h3>
+        <div class="box"><h3>Пятый вариант дизайна</h3></div>
         <div class="item pics"><img src="images\img-5.jpg" height="700" alt=""></div>
     </div>
 </div>

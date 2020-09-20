@@ -135,6 +135,7 @@ li a:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  z-index: 9999;
 }
 
 .content-wrapper {
@@ -159,6 +160,7 @@ li a:hover {
   background-color: #fff;
   border-radius: 14px;
   padding: 40px 35px;
+  z-index: 9999;
 }
 
 .form-label {
@@ -223,7 +225,7 @@ li a:hover {
   position: absolute;
   margin-top: 35px;
   margin-left: -10px;
-  z-index: 9;
+  z-index: 10000;
 }
 
 /* кнопка закрытия при наведении */
@@ -241,8 +243,7 @@ li a:hover {
 }
 
 .owl-carousel .item {
-  background: #12ab8c;
-  color: #fff;
+  z-index: 900;
 }
 
 .cont {
@@ -252,17 +253,32 @@ li a:hover {
 .cont h3 {
   position: absolute;
   font-family: "Montserrat", sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   color: #fff;
   top: 30px;
   right: 20px;
+  padding: 5px 15px;
   z-index: 777;
+}
+
+.box h3 {
+  background-color: rgba(172, 182, 195, 0.3);
+  border-radius: 25px;
 }
 
 .fa-chevron-left, .fa-chevron-right {
   color: #ffff;
-  margin: 0 10px;
+  position: absolute;
+  top: 325px;
+}
+
+.fa-chevron-left {
+  left: 20px;
+}
+
+.fa-chevron-right {
+  right: 20px;
 }
 
 @media (max-width: 1200px) {

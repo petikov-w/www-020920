@@ -5,8 +5,7 @@
 }
 
 .owl-carousel .item {
-  background: #12ab8c;
-  color:#fff;
+  z-index: 900;
 }
 
 .cont {
@@ -16,18 +15,30 @@
 .cont h3 {
   position: absolute;
   font-family: $Montserrat;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   color:#fff;
   top: 30px;
   right: 20px;
+  padding: 5px 15px;
   z-index: 777;
 }
 
+.box h3{
+  background-color: rgba(172, 182, 195, 0.3);
+  border-radius: 25px;
+}
 
 .fa-chevron-left, .fa-chevron-right {
   color: #ffff;
-  margin: 0 10px;
-  //text-shadow: 2px 2px 0 #333; /* Резкая тень под иконкой */
+  position: absolute;
+  top: 325px;
 }
 
+.fa-chevron-left {
+  left: 20px;
+}
+
+.fa-chevron-right {
+  right: 20px;
+}
