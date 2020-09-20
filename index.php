@@ -59,7 +59,7 @@
 
 <div class="owl-carousel owl-theme main-slider">
     <div class="cont">
-        <div class="box"><h3>Первый вариант дизайна</h3></div>
+        <div class="box"><h3>Первый вариант дизайна </h3></div>
         <div class="item pics"><img src="images\img-1.jpg" height="700" alt=""></div>
     </div>
     <div class="cont">
